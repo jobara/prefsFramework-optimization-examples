@@ -8,15 +8,15 @@
     </head>
 
     <body class="prefsEditor-demo-theme fl-focus">
-        <h2>UIO Optimization Test Instances</h2>
-        <ol>
-            <li><a href="individual-source/uio/index.html">Individual JavaScript: Source</a></li>
-            <li><a href="individual-minified/uio/index.html">Individual JavaScript: Minified</a></li>
-            <li><a href="all-source/uio/index.html">Infusion-All JavaScript: Source</a></li>
-            <li><a href="all-minified/uio/index.html">Infusion-All JavaScript: Minified</a></li>
-            <li><a href="custom-source/uio/index.html">Infusion-Custom JavaScript: Source</a></li>
-            <li><a href="custom-minified/uio/index.html">Infusion-Custom JavaScript: Minified</a></li>
-        </ol>
+        <h1>UIO Optimization Tests</h1>
+
+        <h2>Table of Contents</h2>
+        <nav>
+            <ol>
+                <li><a href="#baseline">Baseline</a></li>
+                <li><a href="#native-HTML-sliders">Native HTML 5 Sliders</a></li>
+            </ol>
+        </nav>
 
         <h2>Metrics</h2>
         <p>
@@ -24,6 +24,8 @@
             The server used to host the UIO Optimization Test Instances gzipped resources. The results only indicate
             the fastest instance from a set of 10 runs.
         </p>
+
+        <h3 id="baseline"> Baseline </h3>
 
         <table>
             <thead>
@@ -43,13 +45,13 @@
                     <th>Rendering</th>
                     <th>Painting</th>
                     <th>Other</th>
-                    <th>Idel</th>
+                    <th>Idle</th>
                     <th>Total</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><a href="individual-source/uio/index.html">Individual JavaScript: Source</a></td>
+                    <td><a href="baseline/individual-source/uio/index.html">Individual JavaScript: Source</a></td>
                     <td>93</td>
                     <td>1.2MB</td>
                     <td>1s 70ms</td>
@@ -64,7 +66,7 @@
                     <td>1s 173ms</td>
                 </tr>
                 <tr>
-                    <td><a href="individual-minified/uio/index.html">Individual JavaScript: Minified</a></td>
+                    <td><a href="baseline/individual-minified/uio/index.html">Individual JavaScript: Minified</a></td>
                     <td>93</td>
                     <td>1 MB</td>
                     <td>998ms</td>
@@ -79,7 +81,7 @@
                     <td>1s 104ms</td>
                 </tr>
                 <tr>
-                    <td><a href="all-source/uio/index.html">Infusion-All JavaScript: Source</a></td>
+                    <td><a href="baseline/all-source/uio/index.html">Infusion-All JavaScript: Source</a></td>
                     <td>57</td>
                     <td>1.3 MB</td>
                     <td>1s 110ms</td>
@@ -94,7 +96,7 @@
                     <td>1s 220ms</td>
                 </tr>
                 <tr>
-                    <td><a href="all-minified/uio/index.html">Infusion-All JavaScript: Minified</a></td>
+                    <td><a href="baseline/all-minified/uio/index.html">Infusion-All JavaScript: Minified</a></td>
                     <td>57</td>
                     <td>1.1 MB</td>
                     <td>1s 80ms</td>
@@ -109,7 +111,7 @@
                     <td>1s 188ms</td>
                 </tr>
                 <tr>
-                    <td><a href="custom-source/uio/index.html">Infusion-Custom JavaScript: Source</a></td>
+                    <td><a href="baseline/custom-source/uio/index.html">Infusion-Custom JavaScript: Source</a></td>
                     <td>57</td>
                     <td>1.3 MB</td>
                     <td>999ms</td>
@@ -124,7 +126,7 @@
                     <td>1s 118ms</td>
                 </tr>
                 <tr>
-                    <td><a href="custom-minified/uio/index.html">Infusion-Custom JavaScript: Minified</a></td>
+                    <td><a href="baseline/custom-minified/uio/index.html">Infusion-Custom JavaScript: Minified</a></td>
                     <td>57</td>
                     <td>1 MB</td>
                     <td>997ms</td>
@@ -137,6 +139,109 @@
                     <td>83ms</td>
                     <td>93ms</td>
                     <td>1s 76ms</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 id="native-HTML-sliders"> Native HTML 5 Sliders </h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Type</th>
+                    <th rowspan="2">Requests</th>
+                    <th rowspan="2">Transfered</th>
+                    <th colspan="3">Events</th>
+                    <th colspan="7">Times</th>
+                </tr>
+                <tr>
+                    <th>Finish</th>
+                    <th>DOMContentLoaded</th>
+                    <th>Load</th>
+                    <th>Loading</th>
+                    <th>Scripting</th>
+                    <th>Rendering</th>
+                    <th>Painting</th>
+                    <th>Other</th>
+                    <th>Idle</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="native-html-sliders/individual-source/uio/index.html">Individual JavaScript: Source</a></td>
+                    <td>87</td>
+                    <td>1.1 MB</td>
+                    <td>998ms</td>
+                    <td>538ms</td>
+                    <td>747ms</td>
+                    <td>26ms</td>
+                    <td>732ms</td>
+                    <td>87ms</td>
+                    <td>6ms</td>
+                    <td>113ms</td>
+                    <td>144ms</td>
+                    <td>1s 108ms</td>
+                </tr>
+                <tr>
+                    <td><a href="native-html-sliders/all-source/uio/index.html">Infusion-All JavaScript: Source</a></td>
+                    <td>51</td>
+                    <td>1.2MB</td>
+                    <td>1s 80ms</td>
+                    <td>636ms</td>
+                    <td>823ms</td>
+                    <td>17ms</td>
+                    <td>851ms</td>
+                    <td>74ms</td>
+                    <td>5ms</td>
+                    <td>100ms</td>
+                    <td>142ms</td>
+                    <td>1s 188ms</td>
+                </tr>
+                <tr>
+                    <td><a href="native-html-sliders/all-minified/uio/index.html">Infusion-All JavaScript: Minified</a></td>
+                    <td>51</td>
+                    <td>1023KB</td>
+                    <td>1s 70ms</td>
+                    <td>624ms</td>
+                    <td>827ms</td>
+                    <td>17ms</td>
+                    <td>869ms</td>
+                    <td>73ms</td>
+                    <td>5ms</td>
+                    <td>94ms</td>
+                    <td>98ms</td>
+                    <td>1s 155ms</td>
+                </tr>
+                <tr>
+                    <td><a href="native-html-sliders/custom-source/uio/index.html">Infusion-Custom JavaScript: Source</a></td>
+                    <td>51</td>
+                    <td>1.1MB</td>
+                    <td>984ms</td>
+                    <td>539ms</td>
+                    <td>731ms</td>
+                    <td>16ms</td>
+                    <td>768ms</td>
+                    <td>74ms</td>
+                    <td>5ms</td>
+                    <td>100ms</td>
+                    <td>113ms</td>
+                    <td>1s 77ms</td>
+                </tr>
+                <tr>
+                    <td><a href="native-html-sliders/custom-minified/uio/index.html">Infusion-Custom JavaScript: Minified</a></td>
+                    <td>51</td>
+                    <td>976KB</td>
+                    <td>960ms</td>
+                    <td>553ms</td>
+                    <td>712ms</td>
+                    <td>18ms</td>
+                    <td>770ms</td>
+                    <td>70ms</td>
+                    <td>5ms</td>
+                    <td>92ms</td>
+                    <td>84ms</td>
+                    <td>1s 40ms</td>
                 </tr>
             </tbody>
         </table>
