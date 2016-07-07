@@ -15,6 +15,7 @@
             <ol>
                 <li><a href="#baseline">Baseline</a></li>
                 <li><a href="#native-HTML-sliders">Native HTML 5 Sliders</a></li>
+                <li><a href="#lazyLoad">Lazy Loading</a></li>
             </ol>
         </nav>
 
@@ -242,6 +243,111 @@
                     <td>92ms</td>
                     <td>84ms</td>
                     <td>1s 40ms</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 id="lazyLoad"> Lazy Loading </h3>
+
+        <p>Note: uses native HTML sliders</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Type</th>
+                    <th rowspan="2">Requests</th>
+                    <th rowspan="2">Transfered</th>
+                    <th colspan="3">Events</th>
+                    <th colspan="7">Times</th>
+                </tr>
+                <tr>
+                    <th>Finish</th>
+                    <th>DOMContentLoaded</th>
+                    <th>Load</th>
+                    <th>Loading</th>
+                    <th>Scripting</th>
+                    <th>Rendering</th>
+                    <th>Painting</th>
+                    <th>Other</th>
+                    <th>Idle</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="lazyLoad/individual-source/uio/index.html">Individual JavaScript: Source</a></td>
+                    <td>68</td>
+                    <td>889KB</td>
+                    <td>685ms</td>
+                    <td>495ms</td>
+                    <td>679ms</td>
+                    <td>28ms</td>
+                    <td>463ms</td>
+                    <td>72ms</td>
+                    <td>5ms</td>
+                    <td>87ms</td>
+                    <td>87ms</td>
+                    <td>742</td>
+                </tr>
+                <tr>
+                    <td><a href="lazyLoad/all-source/uio/index.html">Infusion-All JavaScript: Source</a></td>
+                    <td>32</td>
+                    <td>999KB</td>
+                    <td>790ms</td>
+                    <td>617ms</td>
+                    <td>783ms</td>
+                    <td>15ms</td>
+                    <td>602ms</td>
+                    <td>53ms</td>
+                    <td>5ms</td>
+                    <td>55ms</td>
+                    <td>98ms</td>
+                    <td>828ms</td>
+                </tr>
+                <tr>
+                    <td><a href="lazyLoad/all-minified/uio/index.html">Infusion-All JavaScript: Minified</a></td>
+                    <td>32</td>
+                    <td>772KB</td>
+                    <td>793ms</td>
+                    <td>620ms</td>
+                    <td>787ms</td>
+                    <td>19ms</td>
+                    <td>632ms</td>
+                    <td>54ms</td>
+                    <td>3ms</td>
+                    <td>54ms</td>
+                    <td>67ms</td>
+                    <td>829ms</td>
+                </tr>
+                <tr>
+                    <td><a href="lazyLoad/custom-source/uio/index.html">Infusion-Custom JavaScript: Source</a></td>
+                    <td>32</td>
+                    <td>918KB</td>
+                    <td>668</td>
+                    <td>501ms</td>
+                    <td>662ms</td>
+                    <td>18ms</td>
+                    <td>488ms</td>
+                    <td>52ms</td>
+                    <td>4ms</td>
+                    <td>78ms</td>
+                    <td>85ms</td>
+                    <td>724ms</td>
+                </tr>
+                <tr>
+                    <td><a href="lazyLoad/custom-minified/uio/index.html">Infusion-Custom JavaScript: Minified</a></td>
+                    <td>32KB</td>
+                    <td>726ms</td>
+                    <td>641ms</td>
+                    <td>490ms</td>
+                    <td>635ms</td>
+                    <td>15ms</td>
+                    <td>493ms</td>
+                    <td>54ms</td>
+                    <td>3ms</td>
+                    <td>66ms</td>
+                    <td>60ms</td>
+                    <td>691ms</td>
                 </tr>
             </tbody>
         </table>
