@@ -13,9 +13,23 @@
         <h2>Table of Contents</h2>
         <nav>
             <ol>
-                <li><a href="#baseline">Baseline</a></li>
-                <li><a href="#native-HTML-sliders">Native HTML 5 Sliders</a></li>
-                <li><a href="#lazyLoad">Lazy Loading</a></li>
+                <li>
+                    <a href="#separatedPanel">UI Options / Separated Panel</a>
+                    <ol>
+                        <li><a href="#baseline">Baseline</a></li>
+                        <li><a href="#native-HTML-sliders">Native HTML 5 Sliders</a></li>
+                        <li><a href="#lazyLoad">Lazy Loading</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#enhancer">Enhancer</a>
+                    <ol>
+                        <li><a href="#enhancer-baseline-schema">Baseline - Schema</a></li>
+                        <li><a href="#enhancer-baseline-schema-prefs">Baseline - Schema - With Prefs Set</a></li>
+                        <li><a href="#enhancer-baseline-grade">Baseline - Grade</a></li>
+                        <li><a href="#enhancer-baseline-grade-prefs">Baseline - Grade - With Prefs Set</a></li>
+                    </ol>
+                </li>
             </ol>
         </nav>
 
@@ -26,7 +40,9 @@
             the fastest instance from a set of 10 runs.
         </p>
 
-        <h3 id="baseline"> Baseline </h3>
+        <h3 id="separatedPanel">UI Options / Separated Panel</h3>
+
+        <h4 id="baseline"> Baseline </h4>
 
         <table>
             <thead>
@@ -52,7 +68,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><a href="baseline/individual-source/uio/index.html">Individual JavaScript: Source</a></td>
+                    <td><a href="separatedPanel/baseline/individual-source/uio/index.html">Individual JavaScript: Source</a></td>
                     <td>93</td>
                     <td>1.2MB</td>
                     <td>1s 70ms</td>
@@ -67,7 +83,7 @@
                     <td>1s 173ms</td>
                 </tr>
                 <tr>
-                    <td><a href="baseline/individual-minified/uio/index.html">Individual JavaScript: Minified</a></td>
+                    <td><a href="separatedPanel/baseline/individual-minified/uio/index.html">Individual JavaScript: Minified</a></td>
                     <td>93</td>
                     <td>1 MB</td>
                     <td>998ms</td>
@@ -82,7 +98,7 @@
                     <td>1s 104ms</td>
                 </tr>
                 <tr>
-                    <td><a href="baseline/all-source/uio/index.html">Infusion-All JavaScript: Source</a></td>
+                    <td><a href="separatedPanel/baseline/all-source/uio/index.html">Infusion-All JavaScript: Source</a></td>
                     <td>57</td>
                     <td>1.3 MB</td>
                     <td>1s 110ms</td>
@@ -97,7 +113,7 @@
                     <td>1s 220ms</td>
                 </tr>
                 <tr>
-                    <td><a href="baseline/all-minified/uio/index.html">Infusion-All JavaScript: Minified</a></td>
+                    <td><a href="separatedPanel/baseline/all-minified/uio/index.html">Infusion-All JavaScript: Minified</a></td>
                     <td>57</td>
                     <td>1.1 MB</td>
                     <td>1s 80ms</td>
@@ -112,7 +128,7 @@
                     <td>1s 188ms</td>
                 </tr>
                 <tr>
-                    <td><a href="baseline/custom-source/uio/index.html">Infusion-Custom JavaScript: Source</a></td>
+                    <td><a href="separatedPanel/baseline/custom-source/uio/index.html">Infusion-Custom JavaScript: Source</a></td>
                     <td>57</td>
                     <td>1.3 MB</td>
                     <td>999ms</td>
@@ -127,7 +143,7 @@
                     <td>1s 118ms</td>
                 </tr>
                 <tr>
-                    <td><a href="baseline/custom-minified/uio/index.html">Infusion-Custom JavaScript: Minified</a></td>
+                    <td><a href="separatedPanel/baseline/custom-minified/uio/index.html">Infusion-Custom JavaScript: Minified</a></td>
                     <td>57</td>
                     <td>1 MB</td>
                     <td>997ms</td>
@@ -144,7 +160,7 @@
             </tbody>
         </table>
 
-        <h3 id="native-HTML-sliders"> Native HTML 5 Sliders </h3>
+        <h4 id="native-HTML-sliders"> Native HTML 5 Sliders </h4>
 
         <table>
             <thead>
@@ -170,7 +186,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><a href="native-html-sliders/individual-source/uio/index.html">Individual JavaScript: Source</a></td>
+                    <td><a href="separatedPanel/native-html-sliders/individual-source/uio/index.html">Individual JavaScript: Source</a></td>
                     <td>87</td>
                     <td>1.1 MB</td>
                     <td>998ms</td>
@@ -185,7 +201,7 @@
                     <td>1s 108ms</td>
                 </tr>
                 <tr>
-                    <td><a href="native-html-sliders/all-source/uio/index.html">Infusion-All JavaScript: Source</a></td>
+                    <td><a href="separatedPanel/native-html-sliders/all-source/uio/index.html">Infusion-All JavaScript: Source</a></td>
                     <td>51</td>
                     <td>1.2MB</td>
                     <td>1s 80ms</td>
@@ -200,7 +216,7 @@
                     <td>1s 188ms</td>
                 </tr>
                 <tr>
-                    <td><a href="native-html-sliders/all-minified/uio/index.html">Infusion-All JavaScript: Minified</a></td>
+                    <td><a href="separatedPanel/native-html-sliders/all-minified/uio/index.html">Infusion-All JavaScript: Minified</a></td>
                     <td>51</td>
                     <td>1023KB</td>
                     <td>1s 70ms</td>
@@ -215,7 +231,7 @@
                     <td>1s 155ms</td>
                 </tr>
                 <tr>
-                    <td><a href="native-html-sliders/custom-source/uio/index.html">Infusion-Custom JavaScript: Source</a></td>
+                    <td><a href="separatedPanel/native-html-sliders/custom-source/uio/index.html">Infusion-Custom JavaScript: Source</a></td>
                     <td>51</td>
                     <td>1.1MB</td>
                     <td>984ms</td>
@@ -230,7 +246,7 @@
                     <td>1s 77ms</td>
                 </tr>
                 <tr>
-                    <td><a href="native-html-sliders/custom-minified/uio/index.html">Infusion-Custom JavaScript: Minified</a></td>
+                    <td><a href="separatedPanel/native-html-sliders/custom-minified/uio/index.html">Infusion-Custom JavaScript: Minified</a></td>
                     <td>51</td>
                     <td>976KB</td>
                     <td>960ms</td>
@@ -247,7 +263,7 @@
             </tbody>
         </table>
 
-        <h3 id="lazyLoad"> Lazy Loading </h3>
+        <h4 id="lazyLoad"> Lazy Loading </h4>
 
         <p>Note: uses native HTML sliders</p>
 
@@ -275,7 +291,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><a href="lazyLoad/individual-source/uio/index.html">Individual JavaScript: Source</a></td>
+                    <td><a href="separatedPanel/lazyLoad/individual-source/uio/index.html">Individual JavaScript: Source</a></td>
                     <td>68</td>
                     <td>889KB</td>
                     <td>685ms</td>
@@ -290,7 +306,7 @@
                     <td>742ms</td>
                 </tr>
                 <tr>
-                    <td><a href="lazyLoad/all-source/uio/index.html">Infusion-All JavaScript: Source</a></td>
+                    <td><a href="separatedPanel/lazyLoad/all-source/uio/index.html">Infusion-All JavaScript: Source</a></td>
                     <td>32</td>
                     <td>999KB</td>
                     <td>790ms</td>
@@ -305,7 +321,7 @@
                     <td>828ms</td>
                 </tr>
                 <tr>
-                    <td><a href="lazyLoad/all-minified/uio/index.html">Infusion-All JavaScript: Minified</a></td>
+                    <td><a href="separatedPanel/lazyLoad/all-minified/uio/index.html">Infusion-All JavaScript: Minified</a></td>
                     <td>32</td>
                     <td>772KB</td>
                     <td>793ms</td>
@@ -320,7 +336,7 @@
                     <td>829ms</td>
                 </tr>
                 <tr>
-                    <td><a href="lazyLoad/custom-source/uio/index.html">Infusion-Custom JavaScript: Source</a></td>
+                    <td><a href="separatedPanel/lazyLoad/custom-source/uio/index.html">Infusion-Custom JavaScript: Source</a></td>
                     <td>32</td>
                     <td>918KB</td>
                     <td>668</td>
@@ -335,7 +351,7 @@
                     <td>724ms</td>
                 </tr>
                 <tr>
-                    <td><a href="lazyLoad/custom-minified/uio/index.html">Infusion-Custom JavaScript: Minified</a></td>
+                    <td><a href="separatedPanel/lazyLoad/custom-minified/uio/index.html">Infusion-Custom JavaScript: Minified</a></td>
                     <td>32</td>
                     <td>726KB</td>
                     <td>641ms</td>
@@ -348,6 +364,420 @@
                     <td>66ms</td>
                     <td>60ms</td>
                     <td>691ms</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 id="enhancer">Enhancer</h3>
+
+        <h4 id="enhancer-baseline-schema"> Baseline - Schema </h4>
+
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Type</th>
+                    <th rowspan="2">Requests</th>
+                    <th rowspan="2">Transfered</th>
+                    <th colspan="3">Events</th>
+                    <th colspan="7">Times</th>
+                </tr>
+                <tr>
+                    <th>Finish</th>
+                    <th>DOMContentLoaded</th>
+                    <th>Load</th>
+                    <th>Loading</th>
+                    <th>Scripting</th>
+                    <th>Rendering</th>
+                    <th>Painting</th>
+                    <th>Other</th>
+                    <th>Idle</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="enhancer/baseline-schema/individual-source/prefsEditor/index.html">Individual JavaScript: Source</a></td>
+                    <td>40</td>
+                    <td>794KB</td>
+                    <td>408ms</td>
+                    <td>392ms</td>
+                    <td>452ms</td>
+                    <td>14ms</td>
+                    <td>265ms</td>
+                    <td>64ms</td>
+                    <td>5ms</td>
+                    <td>52ms</td>
+                    <td>105ms</td>
+                    <td>504ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/baseline-schema/all-source/prefsEditor/index.html">Infusion-All JavaScript: Source</a></td>
+                    <td>19</td>
+                    <td>963KB</td>
+                    <td>615ms</td>
+                    <td>600ms</td>
+                    <td>620ms</td>
+                    <td>9ms</td>
+                    <td>496ms</td>
+                    <td>48ms</td>
+                    <td>3ms</td>
+                    <td>51ms</td>
+                    <td>97ms</td>
+                    <td>704ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/baseline-schema/all-minified/prefsEditor/index.html">Infusion-All JavaScript: Minified</a></td>
+                    <td>19</td>
+                    <td>737KB</td>
+                    <td>600ms</td>
+                    <td>588ms</td>
+                    <td>639ms</td>
+                    <td>10ms</td>
+                    <td>511ms</td>
+                    <td>57ms</td>
+                    <td>3ms</td>
+                    <td>47ms</td>
+                    <td>75ms</td>
+                    <td>703ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/baseline-schema/custom-source/prefsEditor/index.html">Infusion-Custom JavaScript: Source</a></td>
+                    <td>19</td>
+                    <td>882KB</td>
+                    <td>452ms</td>
+                    <td>441ms</td>
+                    <td>460ms</td>
+                    <td>10ms</td>
+                    <td>351ms</td>
+                    <td>48ms</td>
+                    <td>4ms</td>
+                    <td>48ms</td>
+                    <td>79ms</td>
+                    <td>539ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/baseline-schema/custom-minified/prefsEditor/index.html">Infusion-Custom JavaScript: Minified</a></td>
+                    <td>19</td>
+                    <td>690KB</td>
+                    <td>463ms</td>
+                    <td>451ms</td>
+                    <td>503ms</td>
+                    <td>12ms</td>
+                    <td>376ms</td>
+                    <td>58ms</td>
+                    <td>5ms</td>
+                    <td>43ms</td>
+                    <td>69ms</td>
+                    <td>561ms</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4 id="enhancer-baseline-schema-prefs"> Baseline - Schema - With Prefs Set</h4>
+
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Type</th>
+                    <th rowspan="2">Requests</th>
+                    <th rowspan="2">Transfered</th>
+                    <th colspan="3">Events</th>
+                    <th colspan="7">Times</th>
+                </tr>
+                <tr>
+                    <th>Finish</th>
+                    <th>DOMContentLoaded</th>
+                    <th>Load</th>
+                    <th>Loading</th>
+                    <th>Scripting</th>
+                    <th>Rendering</th>
+                    <th>Painting</th>
+                    <th>Other</th>
+                    <th>Idle</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="enhancer/baseline-schema/individual-source/prefsEditor/index.html">Individual JavaScript: Source</a></td>
+                    <td>37</td>
+                    <td>507KB</td>
+                    <td>388ms</td>
+                    <td>399ms</td>
+                    <td>409ms</td>
+                    <td>15ms</td>
+                    <td>313ms</td>
+                    <td>24ms</td>
+                    <td>4ms</td>
+                    <td>40ms</td>
+                    <td>90ms</td>
+                    <td>486ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/baseline-schema/all-source/prefsEditor/index.html">Infusion-All JavaScript: Source</a></td>
+                    <td>16</td>
+                    <td>676KB</td>
+                    <td>623ms</td>
+                    <td>636ms</td>
+                    <td>644ms</td>
+                    <td>6ms</td>
+                    <td>556ms</td>
+                    <td>23ms</td>
+                    <td>3ms</td>
+                    <td>19ms</td>
+                    <td>47ms</td>
+                    <td>654ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/baseline-schema/all-minified/prefsEditor/index.html">Infusion-All JavaScript: Minified</a></td>
+                    <td>16</td>
+                    <td>450KB</td>
+                    <td>604ms</td>
+                    <td>614ms</td>
+                    <td>624ms</td>
+                    <td>6ms</td>
+                    <td>558ms</td>
+                    <td>23ms</td>
+                    <td>3ms</td>
+                    <td>20ms</td>
+                    <td>45ms</td>
+                    <td>656ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/baseline-schema/custom-source/prefsEditor/index.html">Infusion-Custom JavaScript: Source</a></td>
+                    <td>16</td>
+                    <td>565KB</td>
+                    <td>452ms</td>
+                    <td>464ms</td>
+                    <td>473ms</td>
+                    <td>10ms</td>
+                    <td>405ms</td>
+                    <td>22ms</td>
+                    <td>3ms</td>
+                    <td>36ms</td>
+                    <td>72ms</td>
+                    <td>547ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/baseline-schema/custom-minified/prefsEditor/index.html">Infusion-Custom JavaScript: Minified</a></td>
+                    <td>16</td>
+                    <td>404KB</td>
+                    <td>451ms</td>
+                    <td>461ms</td>
+                    <td>471ms</td>
+                    <td>11ms</td>
+                    <td>414ms</td>
+                    <td>23ms</td>
+                    <td>3ms</td>
+                    <td>33ms</td>
+                    <td>60ms</td>
+                    <td>544ms</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4 id="enhancer-baseline-grade"> Baseline - Grade </h4>
+
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Type</th>
+                    <th rowspan="2">Requests</th>
+                    <th rowspan="2">Transfered</th>
+                    <th colspan="3">Events</th>
+                    <th colspan="7">Times</th>
+                </tr>
+                <tr>
+                    <th>Finish</th>
+                    <th>DOMContentLoaded</th>
+                    <th>Load</th>
+                    <th>Loading</th>
+                    <th>Scripting</th>
+                    <th>Rendering</th>
+                    <th>Painting</th>
+                    <th>Other</th>
+                    <th>Idle</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="enhancer/baseline-grade/individual-source/prefsEditor/index.html">Individual JavaScript: Source</a></td>
+                    <td>36</td>
+                    <td>773KB</td>
+                    <td>288ms</td>
+                    <td>279ms</td>
+                    <td>310ms</td>
+                    <td>12ms</td>
+                    <td>183ms</td>
+                    <td>55ms</td>
+                    <td>4ms</td>
+                    <td>45ms</td>
+                    <td>78ms</td>
+                    <td>377ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/baseline-grade/all-source/prefsEditor/index.html">Infusion-All JavaScript: Source</a></td>
+                    <td>19</td>
+                    <td>963KB</td>
+                    <td>561ms</td>
+                    <td>546ms</td>
+                    <td>595ms</td>
+                    <td>9ms</td>
+                    <td>450ms</td>
+                    <td>55ms</td>
+                    <td>3ms</td>
+                    <td>49ms</td>
+                    <td>80ms</td>
+                    <td>646ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/baseline-grade/all-minified/prefsEditor/index.html">Infusion-All JavaScript: Minified</a></td>
+                    <td>19</td>
+                    <td>737KB</td>
+                    <td>542ms</td>
+                    <td>534ms</td>
+                    <td>583ms</td>
+                    <td>9ms</td>
+                    <td>463ms</td>
+                    <td>56ms</td>
+                    <td>3ms</td>
+                    <td>43ms</td>
+                    <td>69ms</td>
+                    <td>644ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/baseline-grade/custom-source/prefsEditor/index.html">Infusion-Custom JavaScript: Source</a></td>
+                    <td>19</td>
+                    <td>882KB</td>
+                    <td>395ms</td>
+                    <td>385ms</td>
+                    <td>428ms</td>
+                    <td>9ms</td>
+                    <td>398ms</td>
+                    <td>54ms</td>
+                    <td>3ms</td>
+                    <td>42ms</td>
+                    <td>77ms</td>
+                    <td>483ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/baseline-grade/custom-minified/prefsEditor/index.html">Infusion-Custom JavaScript: Minified</a></td>
+                    <td>19</td>
+                    <td>690KB</td>
+                    <td>391ms</td>
+                    <td>380ms</td>
+                    <td>437ms</td>
+                    <td>10ms</td>
+                    <td>312ms</td>
+                    <td>61ms</td>
+                    <td>4ms</td>
+                    <td>41ms</td>
+                    <td>69ms</td>
+                    <td>496ms</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4 id="enhancer-baseline-grade-prefs"> Baseline - Grade - With Prefs Set</h4>
+
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Type</th>
+                    <th rowspan="2">Requests</th>
+                    <th rowspan="2">Transfered</th>
+                    <th colspan="3">Events</th>
+                    <th colspan="7">Times</th>
+                </tr>
+                <tr>
+                    <th>Finish</th>
+                    <th>DOMContentLoaded</th>
+                    <th>Load</th>
+                    <th>Loading</th>
+                    <th>Scripting</th>
+                    <th>Rendering</th>
+                    <th>Painting</th>
+                    <th>Other</th>
+                    <th>Idle</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="enhancer/baseline-grade/individual-source/prefsEditor/index.html">Individual JavaScript: Source</a></td>
+                    <td>33</td>
+                    <td>486KB</td>
+                    <td>300ms</td>
+                    <td>312ms</td>
+                    <td>321ms</td>
+                    <td>13ms</td>
+                    <td>236ms</td>
+                    <td>24ms</td>
+                    <td>3ms</td>
+                    <td>37ms</td>
+                    <td>95ms</td>
+                    <td>409ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/baseline-grade/all-source/prefsEditor/index.html">Infusion-All JavaScript: Source</a></td>
+                    <td>16</td>
+                    <td>676KB</td>
+                    <td>565ms</td>
+                    <td>574ms</td>
+                    <td>583ms</td>
+                    <td>10ms</td>
+                    <td>496ms</td>
+                    <td>21ms</td>
+                    <td>3ms</td>
+                    <td>39ms</td>
+                    <td>93ms</td>
+                    <td>662ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/baseline-grade/all-minified/prefsEditor/index.html">Infusion-All JavaScript: Minified</a></td>
+                    <td>16</td>
+                    <td>450KB</td>
+                    <td>554ms</td>
+                    <td>564ms</td>
+                    <td>571ms</td>
+                    <td>9ms</td>
+                    <td>513ms</td>
+                    <td>21ms</td>
+                    <td>3ms</td>
+                    <td>33ms</td>
+                    <td>71ms</td>
+                    <td>650ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/baseline-grade/custom-source/prefsEditor/index.html">Infusion-Custom JavaScript: Source</a></td>
+                    <td>16</td>
+                    <td>595KB</td>
+                    <td>398ms</td>
+                    <td>409ms</td>
+                    <td>418ms</td>
+                    <td>10ms</td>
+                    <td>350ms</td>
+                    <td>23ms</td>
+                    <td>3ms</td>
+                    <td>35ms</td>
+                    <td>69ms</td>
+                    <td>488ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/baseline-grade/custom-minified/prefsEditor/index.html">Infusion-Custom JavaScript: Minified</a></td>
+                    <td>16</td>
+                    <td>404KB</td>
+                    <td>396ms</td>
+                    <td>408ms</td>
+                    <td>418ms</td>
+                    <td>10ms</td>
+                    <td>359ms</td>
+                    <td>24ms</td>
+                    <td>3ms</td>
+                    <td>34ms</td>
+                    <td>58ms</td>
+                    <td>486ms</td>
                 </tr>
             </tbody>
         </table>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <link rel="stylesheet" type="text/css" href="../infusion/src/lib/normalize/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../infusion/src/framework/core/css/fluid.css" />
+
+        <link rel="stylesheet" type="text/css" href="../infusion/src/lib/jquery/ui/css/fl-theme-by/by.css" />
+        <link rel="stylesheet" type="text/css" href="../infusion/src/lib/jquery/ui/css/fl-theme-yb/yb.css" />
+        <link rel="stylesheet" type="text/css" href="../infusion/src/lib/jquery/ui/css/fl-theme-bw/bw.css" />
+        <link rel="stylesheet" type="text/css" href="../infusion/src/lib/jquery/ui/css/fl-theme-wb/wb.css" />
+        <link rel="stylesheet" type="text/css" href="../infusion/src/lib/jquery/ui/css/fl-theme-lgdg/lgdg.css" />
+
+        <!-- Component styles -->
+        <link rel="stylesheet" type="text/css" href="../infusion/src/framework/preferences/css/Enactors.css" />
+        <link rel="stylesheet" type="text/css" href="../infusion/src/framework/preferences/css/PrefsEditor.css" />
+        <link rel="stylesheet" type="text/css" href="../infusion/src/framework/preferences/css/FullPrefsEditor.css" />
+        <link rel="stylesheet" type="text/css" href="../infusion/src/framework/preferences/css/FullPreviewPrefsEditor.css" />
+
+        <link rel="stylesheet" type="text/css" href="css/prefsEditorFullPage.css" /> <!-- Demo style -->
+
+        <title>Preferences Editor: Full Page</title>
+        <script type="text/javascript" src="../infusion/infusion-custom.js"></script>
+
+        <script type="text/javascript" src="js/prefsEditorFullpage.js"></script>
+    </head>
+
+    <body>
+        <!-- The page-wide UI Enhancer needs to be initialized right away -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                demo.initSettingsStore();
+                demo.initPageEnhancer();
+                demo.initFullWithPreview("#myPrefsEditor", {
+                    preview: {
+                        templateUrl: "html/prefsEditorPreview.html"
+                    }
+                });
+            });
+        </script>
+
+        <aside class="instructions-container">
+            <div class="instructions-content">
+                <h2>Description</h2>
+                <p>
+                    This is an example of a full page preferences editor. As preferences are changed, they are visible in a preview window. After the preferences are saved, they are applied to the entire page.
+                </p>
+                <h2>Instructions</h2>
+                <ol>
+                    <li>
+                        Experiment with the various Preferences Editor settings and verify that the preview window
+                        contents are styled correctly.
+                    </li>
+                    <li>Use the "save and apply" button to apply the preview styles to Preferences Editor</li>
+                    <li>Use the "reset" button to reset the styles</li>
+                    <li>Be sure to test with the <a href="index-jQueryUI.html">jQuery UI widgets version as well.</a></li>
+                </ol>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="fl-hidden">
+                <div class="flc-toc-tocContainer">
+                </div>
+            </div>
+
+            <h1>Preferences Editor: Full Page</h1>
+            <div id="myPrefsEditor"></div>
+        </main>
+
+    </body>
+</html>

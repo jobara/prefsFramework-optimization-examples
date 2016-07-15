@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <link rel="stylesheet" type="text/css" href="../infusion/src/lib/normalize/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../infusion/src/framework/core/css/fluid.css" />
+
+        <link rel="stylesheet" type="text/css" href="../infusion/src/lib/jquery/ui/css/fl-theme-by/by.css" />
+        <link rel="stylesheet" type="text/css" href="../infusion/src/lib/jquery/ui/css/fl-theme-yb/yb.css" />
+        <link rel="stylesheet" type="text/css" href="../infusion/src/lib/jquery/ui/css/fl-theme-bw/bw.css" />
+        <link rel="stylesheet" type="text/css" href="../infusion/src/lib/jquery/ui/css/fl-theme-wb/wb.css" />
+        <link rel="stylesheet" type="text/css" href="../infusion/src/lib/jquery/ui/css/fl-theme-lgdg/lgdg.css" />
+
+        <!-- Component styles -->
+        <link rel="stylesheet" type="text/css" href="../infusion/src/framework/preferences/css/Enactors.css" />
+        <link rel="stylesheet" type="text/css" href="../infusion/src/framework/preferences/css/PrefsEditor.css" />
+        <link rel="stylesheet" type="text/css" href="../infusion/src/framework/preferences/css/FullPrefsEditor.css" />
+        <link rel="stylesheet" type="text/css" href="../infusion/src/framework/preferences/css/FullPreviewPrefsEditor.css" />
+
+        <link rel="stylesheet" type="text/css" href="css/prefsEditorFullPage.css" /> <!-- Demo style -->
+
+        <title>Preferences Editor: Full Page, With Preview, Using Schema</title>
+        <script type="text/javascript" src="../infusion/infusion-all.js"></script>
+
+        <script type="text/javascript" src="js/prefsEditorFullPageSchema.js"></script>
+    </head>
+
+    <body>
+        <!-- The page-wide UI Enhancer needs to be initialized right away -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                demo.initFullWithPreview("#myPrefsEditor", {
+                    prefsEditor: {
+                        preview: {
+                            templateUrl: "html/prefsEditorPreview.html"
+                        }
+                    }
+                });
+            });
+        </script>
+
+        <main class="content">
+            <div class="fl-hidden">
+                <div class="flc-toc-tocContainer">
+                </div>
+            </div>
+
+            <h1>Preferences Editor: Full Page using Schema</h1>
+            <div id="myPrefsEditor"></div>
+        </main>
+
+    </body>
+</html>
