@@ -28,6 +28,10 @@
                         <li><a href="#enhancer-baseline-schema-prefs">Baseline - Schema - With Prefs Set</a></li>
                         <li><a href="#enhancer-baseline-grade">Baseline - Grade</a></li>
                         <li><a href="#enhancer-baseline-grade-prefs">Baseline - Grade - With Prefs Set</a></li>
+                        <li><a href="#enhancer-lazyLoad-schema">Layz Loading - Schema</a></li>
+                        <li><a href="#enhancer-lazyLoad-schema-prefs">Layz Loading - Schema - With Prefs Set</a></li>
+                        <li><a href="#enhancer-lazyLoad-grade">Layz Loading - Grade</a></li>
+                        <li><a href="#enhancer-lazyLoad-grade-prefs">Layz Loading - Grade - With Prefs Set</a></li>
                     </ol>
                 </li>
             </ol>
@@ -778,6 +782,298 @@
                     <td>34ms</td>
                     <td>58ms</td>
                     <td>486ms</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4 id="enhancer-lazyLoad-schema"> Lazy Loading - Schema </h4>
+
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Type</th>
+                    <th rowspan="2">Requests</th>
+                    <th rowspan="2">Transfered</th>
+                    <th colspan="3">Events</th>
+                    <th colspan="7">Times</th>
+                </tr>
+                <tr>
+                    <th>Finish</th>
+                    <th>DOMContentLoaded</th>
+                    <th>Load</th>
+                    <th>Loading</th>
+                    <th>Scripting</th>
+                    <th>Rendering</th>
+                    <th>Painting</th>
+                    <th>Other</th>
+                    <th>Idle</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="enhancer/lazyLoad-schema/individual-source/prefsEditor/index.html">Individual JavaScript: Source</a></td>
+                    <td>19</td>
+                    <td>489KB</td>
+                    <td>68ms</td>
+                    <td>54ms</td>
+                    <td>84ms</td>
+                    <td>10ms</td>
+                    <td>1ms</td>
+                    <td>56ms</td>
+                    <td>8ms</td>
+                    <td>44ms</td>
+                    <td>3s 15ms</td>
+                    <td>3 133ms</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4 id="enhancer-lazyLoad-schema-prefs"> Lazy Loading - Schema - With Prefs Set</h4>
+
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Type</th>
+                    <th rowspan="2">Requests</th>
+                    <th rowspan="2">Transfered</th>
+                    <th colspan="3">Events</th>
+                    <th colspan="7">Times</th>
+                </tr>
+                <tr>
+                    <th>Finish</th>
+                    <th>DOMContentLoaded</th>
+                    <th>Load</th>
+                    <th>Loading</th>
+                    <th>Scripting</th>
+                    <th>Rendering</th>
+                    <th>Painting</th>
+                    <th>Other</th>
+                    <th>Idle</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="enhancer/lazyLoad-schema/individual-source/prefsEditor/index.html">Individual JavaScript: Source</a></td>
+                    <td>43</td>
+                    <td>796KB</td>
+                    <td>484ms</td>
+                    <td>60ms</td>
+                    <td>514ms</td>
+                    <td>10ms</td>
+                    <td>349ms</td>
+                    <td>84ms</td>
+                    <td>7ms</td>
+                    <td>55ms</td>
+                    <td>60ms</td>
+                    <td>565ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/lazyLoad-schema/all-source/prefsEditor/index.html">Infusion-All JavaScript: Source</a></td>
+                    <td>22</td>
+                    <td>965KB</td>
+                    <td>704ms</td>
+                    <td>55ms</td>
+                    <td>732ms</td>
+                    <td>10ms</td>
+                    <td>587ms</td>
+                    <td>72ms</td>
+                    <td>7ms</td>
+                    <td>50ms</td>
+                    <td>63ms</td>
+                    <td>789ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/lazyLoad-schema/all-minified/prefsEditor/index.html">Infusion-All JavaScript: Minified</a></td>
+                    <td>22</td>
+                    <td>739KB</td>
+                    <td>653ms</td>
+                    <td>55ms</td>
+                    <td>681ms</td>
+                    <td>10ms</td>
+                    <td>578ms</td>
+                    <td>62ms</td>
+                    <td>4ms</td>
+                    <td>45ms</td>
+                    <td>59ms</td>
+                    <td>759ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/lazyLoad-schema/custom-source/prefsEditor/index.html">Infusion-Custom JavaScript: Source</a></td>
+                    <td>22</td>
+                    <td>884KB</td>
+                    <td>517ms</td>
+                    <td>55ms</td>
+                    <td>545ms</td>
+                    <td>10ms</td>
+                    <td>447ms</td>
+                    <td>53ms</td>
+                    <td>6ms</td>
+                    <td>52ms</td>
+                    <td>78ms</td>
+                    <td>645ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/lazyLoad-schema/custom-minified/prefsEditor/index.html">Infusion-Custom JavaScript: Minified</a></td>
+                    <td>22</td>
+                    <td>692KB</td>
+                    <td>511ms</td>
+                    <td>55ms</td>
+                    <td>528ms</td>
+                    <td>9ms</td>
+                    <td>435ms</td>
+                    <td>55ms</td>
+                    <td>3ms</td>
+                    <td>42ms</td>
+                    <td>53ms</td>
+                    <td>599ms</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4 id="enhancer-lazyLoad-grade"> Lazy Loading - Grade </h4>
+
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Type</th>
+                    <th rowspan="2">Requests</th>
+                    <th rowspan="2">Transfered</th>
+                    <th colspan="3">Events</th>
+                    <th colspan="7">Times</th>
+                </tr>
+                <tr>
+                    <th>Finish</th>
+                    <th>DOMContentLoaded</th>
+                    <th>Load</th>
+                    <th>Loading</th>
+                    <th>Scripting</th>
+                    <th>Rendering</th>
+                    <th>Painting</th>
+                    <th>Other</th>
+                    <th>Idle</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="enhancer/lazyLoad-grade/individual-source/prefsEditor/index.html">Individual JavaScript: Source</a></td>
+                    <td>19</td>
+                    <td>489KB</td>
+                    <td>67ms</td>
+                    <td>55ms</td>
+                    <td>87ms</td>
+                    <td>10ms</td>
+                    <td>2ms</td>
+                    <td>56ms</td>
+                    <td>8ms</td>
+                    <td>48ms</td>
+                    <td>3s 21ms</td>
+                    <td>3s 144ms</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4 id="enhancer-lazyLoad-grade-prefs"> Lazy Loading - Grade - With Prefs Set</h4>
+
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Type</th>
+                    <th rowspan="2">Requests</th>
+                    <th rowspan="2">Transfered</th>
+                    <th colspan="3">Events</th>
+                    <th colspan="7">Times</th>
+                </tr>
+                <tr>
+                    <th>Finish</th>
+                    <th>DOMContentLoaded</th>
+                    <th>Load</th>
+                    <th>Loading</th>
+                    <th>Scripting</th>
+                    <th>Rendering</th>
+                    <th>Painting</th>
+                    <th>Other</th>
+                    <th>Idle</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="enhancer/lazyLoad-grade/individual-source/prefsEditor/index.html">Individual JavaScript: Source</a></td>
+                    <td>39</td>
+                    <td>775KB</td>
+                    <td>374ms</td>
+                    <td>56ms</td>
+                    <td>405ms</td>
+                    <td>10ms</td>
+                    <td>260ms</td>
+                    <td>69ms</td>
+                    <td>6ms</td>
+                    <td>51ms</td>
+                    <td>48ms</td>
+                    <td>444ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/lazyLoad-grade/all-source/prefsEditor/index.html">Infusion-All JavaScript: Source</a></td>
+                    <td>22</td>
+                    <td>965KB</td>
+                    <td>688ms</td>
+                    <td>57ms</td>
+                    <td>698ms</td>
+                    <td>10ms</td>
+                    <td>559ms</td>
+                    <td>91ms</td>
+                    <td>7ms</td>
+                    <td>49ms</td>
+                    <td>30ms</td>
+                    <td>746ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/lazyLoad-grade/all-minified/prefsEditor/index.html">Infusion-All JavaScript: Minified</a></td>
+                    <td>22</td>
+                    <td>739KB</td>
+                    <td>609ms</td>
+                    <td>54ms</td>
+                    <td>640ms</td>
+                    <td>9ms</td>
+                    <td>531ms</td>
+                    <td>67ms</td>
+                    <td>6ms</td>
+                    <td>44ms</td>
+                    <td>58ms</td>
+                    <td>715ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/lazyLoad-grade/custom-source/prefsEditor/index.html">Infusion-Custom JavaScript: Source</a></td>
+                    <td>22</td>
+                    <td>883KB</td>
+                    <td>469ms</td>
+                    <td>56ms</td>
+                    <td>498ms</td>
+                    <td>10ms</td>
+                    <td>399ms</td>
+                    <td>53ms</td>
+                    <td>6ms</td>
+                    <td>50ms</td>
+                    <td>68ms</td>
+                    <td>587ms</td>
+                </tr>
+                <tr>
+                    <td><a href="enhancer/lazyLoad-grade/custom-minified/prefsEditor/index.html">Infusion-Custom JavaScript: Minified</a></td>
+                    <td>22</td>
+                    <td>692KB</td>
+                    <td>467ms</td>
+                    <td>55ms</td>
+                    <td>498ms</td>
+                    <td>9ms</td>
+                    <td>385ms</td>
+                    <td>69ms</td>
+                    <td>7ms</td>
+                    <td>45ms</td>
+                    <td>60ms</td>
+                    <td>575ms</td>
                 </tr>
             </tbody>
         </table>
